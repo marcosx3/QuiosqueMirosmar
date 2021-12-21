@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sistemas.quiosque.CadastrarProdutoController">
+   <children>
+      <Text layoutX="243.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastrar Produtos" wrappingWidth="113.13671875" />
+      <Label layoutX="26.0" layoutY="99.0" prefHeight="17.0" prefWidth="48.0" text="Nome" />
+      <TextField fx:id="txtNomeProduto" layoutX="94.0" layoutY="95.0" prefHeight="25.0" prefWidth="258.0" />
+      <Label layoutX="26.0" layoutY="134.0" prefHeight="17.0" prefWidth="48.0" text="Preco" />
+      <TextField fx:id="txtPrecoProduto" layoutX="94.0" layoutY="130.0" />
+      <Label layoutX="26.0" layoutY="173.0" text="Tipo" />
+      <ChoiceBox fx:id="ckTipo" layoutX="94.0" layoutY="169.0" prefWidth="150.0" />
+      <Button fx:id="btnCancelaCadastroProduto" layoutX="107.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#cancelarCadastro" text="Cancelar" />
+      <Button fx:id="btnCadastrarProduto" layoutX="203.0" layoutY="228.0" mnemonicParsing="false" onMouseClicked="#cadastrarProduto" text="Cadastrar" />
+      <HBox alignment="CENTER" layoutX="-2.0" prefHeight="37.0" prefWidth="600.0" spacing="25.0">
+         <children>
+            <Button fx:id="btnCaixa" alignment="CENTER" mnemonicParsing="false" text="Caixa" />
+            <Button fx:id="btnEstoque" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#goEstoque" text="Estoque" />
+            <Button fx:id="btnHelp" alignment="CENTER" mnemonicParsing="false" text="Help" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="15.0" top="5.0" />
+         </padding>
+      </HBox>
+      <Label layoutX="30.0" layoutY="70.0" text="id" />
+      <TextField fx:id="cxID" alignment="CENTER" focusTraversable="false" layoutX="94.0" layoutY="66.0" mouseTransparent="true" prefHeight="25.0" prefWidth="62.0" />
+   </children>
+</AnchorPane>
